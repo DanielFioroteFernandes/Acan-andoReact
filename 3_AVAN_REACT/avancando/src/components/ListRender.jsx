@@ -1,9 +1,9 @@
 import { setUsers, useState } from "react";
 
 const ListRender = () => {
-  const [list] = useState(["matheus", "Pedro", "Josias", "Maria"]);
+  const [list] = useState(["Daniel", "Pedro", "Josias", "Maria"]);
 
-  const [users] = useState([
+  const [users, setUsers] = useState([
     { id: 1, nome: "Daniel", age: 34 },
     { id: 2, nome: "Izabel", age: 35 },
     { id: 3, nome: "Taise", age: 40 },

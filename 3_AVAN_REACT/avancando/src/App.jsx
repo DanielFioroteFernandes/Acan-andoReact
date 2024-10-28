@@ -1,8 +1,8 @@
 import "./App.css";
 
 //Components
-import ManageData from "./components/ManageData";
 import ListRender from "./components/ListRender";
+import ManageData from "./components/ManageData";
 
 //Importando imagens da pasta Assets
 import City from "./assets/City.jpg";
@@ -24,6 +24,7 @@ function App() {
       </div>
 
       <ManageData />
+
       <ListRender />
     </>
   );
