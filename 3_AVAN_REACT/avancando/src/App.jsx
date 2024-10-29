@@ -3,6 +3,7 @@ import "./App.css";
 //Components
 import ListRender from "./components/ListRender";
 import ManageData from "./components/ManageData";
+import ConditionalRender from "./components/ConditionalRender";
 
 //Importando imagens da pasta Assets
 import City from "./assets/City.jpg";
@@ -26,6 +27,8 @@ function App() {
       <ManageData />
 
       <ListRender />
+
+      <ConditionalRender />
     </>
   );
 }
