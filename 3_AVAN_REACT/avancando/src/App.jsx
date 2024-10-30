@@ -1,14 +1,20 @@
+import { useState } from "react";
 import "./App.css";
 
 //Importando imagens da pasta Assets
 import City from "./assets/City.jpg";
 
 //Components
+import CarDetails from "./components/CarDetails";
+import ConditionalRender from "./components/ConditionalRender";
+import Container from "./components/Container";
+import ExecuteFunction from "./components/ExecuteFunction";
+import Fragment from "./components/Fragment";
 import ListRender from "./components/ListRender";
 import ManageData from "./components/ManageData";
-import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
-import CarDetails from "./components/CarDetails";
+import Message from "./components/Message";
+import ChangeMessageState from "./components/ChangeMessageState";
 
 function App() {
   const name = "Jessica";
@@ -21,6 +27,17 @@ function App() {
     { id: 5, brand: "BYD", color: "Lilaz", km: 150 },
     { id: 6, brand: "Honda", color: "Laranjado", km: 0 },
   ];
+
+  function showMessage() {
+    console.log("Evento do componente pai");
+  }
+
+  const [message, setMessage] = useState("");
+
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  };
+
   return (
     <>
       <h1>Avançando no react</h1>
@@ -55,8 +72,35 @@ function App() {
       {/* Loop em array de objetos */}
 
       {cars.map((car) => (
-        <CarDetails brand={car.brand} color={car.color} km={car.km} />
+        <CarDetails
+          key={car.id}
+          brand={car.brand}
+          color={car.color}
+          km={car.km}
+        />
       ))}
+
+      {/* Fragment */}
+
+      <Fragment />
+
+      {/* Children */}
+
+      <Container myValue="Teste">
+        <p>esse é o conteudo</p>
+      </Container>
+      <Container myValue="Teste2">
+        <h5>testando container</h5>
+      </Container>
+
+      {/* Executar Função */}
+
+      <ExecuteFunction myFunction={showMessage} />
+
+      {/* state lift */}
+
+      <Message msg={message} />
+      <ChangeMessageState handleMessage={handleMessage} />
     </>
   );
 }
