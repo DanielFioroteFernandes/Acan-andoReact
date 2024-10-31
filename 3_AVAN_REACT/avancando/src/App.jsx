@@ -15,6 +15,7 @@ import ManageData from "./components/ManageData";
 import ShowUserName from "./components/ShowUserName";
 import Message from "./components/Message";
 import ChangeMessageState from "./components/ChangeMessageState";
+import UserDetails from "./components/UserDetails";
 
 function App() {
   const name = "Jessica";
@@ -26,6 +27,12 @@ function App() {
     { id: 4, brand: "Poshe", color: "Azul", km: 500000 },
     { id: 5, brand: "BYD", color: "Lilaz", km: 150 },
     { id: 6, brand: "Honda", color: "Laranjado", km: 0 },
+  ];
+
+  const pessoa = [
+    { id: 8, nome: "Daniel", idade: "35", profissao: "suporte" },
+    { id: 9, nome: "Jessica", idade: "15", profissao: "enfermeira" },
+    { id: 10, nome: "Junio", idade: "35", profissao: "Script" },
   ];
 
   function showMessage() {
@@ -77,6 +84,15 @@ function App() {
           brand={car.brand}
           color={car.color}
           km={car.km}
+        />
+      ))}
+
+      {pessoa.map((pes) => (
+        <UserDetails
+          key={pes.id}
+          nome={pes.nome}
+          idade={pes.idade}
+          profissao={pes.profissao}
         />
       ))}
 
