@@ -6,9 +6,14 @@ function App() {
     <>
       <h2>Forms</h2>
 
-      <MyForm />
-
-      <h2>Labol envolvendo input</h2>
+      <MyForm
+        user={{
+          name: "Josias",
+          email: "josias@gmail.com",
+          bio: "sou melhor adv do mundo",
+          role: "admin",
+        }}
+      />
     </>
   );
 }
