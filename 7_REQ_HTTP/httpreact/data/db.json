@@ -1,19 +1,59 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Camisa",
-        "price": 59.9
-      },
-      {
-        "id": 2,
-        "name": "Calça vermelha",
-        "price": 90
-      },
-      {
-        "id": 3,
-        "name": "Boné aba reta",
-        "price": 29.9
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "3a0e",
+      "name": "teste4",
+      "price": "26"
+    },
+    {
+      "id": "a9c2",
+      "name": "daniel",
+      "price": "352"
+    },
+    {
+      "id": "88ef",
+      "name": "daniel",
+      "price": "352"
+    },
+    {
+      "id": "cae0",
+      "name": "daniel",
+      "price": "352"
+    },
+    {
+      "id": "8828",
+      "name": "daniel",
+      "price": "855"
+    },
+    {
+      "id": "ffac",
+      "name": "daniel",
+      "price": "855"
+    },
+    {
+      "id": "3f68",
+      "name": "carro",
+      "price": "25"
+    },
+    {
+      "id": "fe74",
+      "name": "carro",
+      "price": "25"
+    }
+  ]
+}
