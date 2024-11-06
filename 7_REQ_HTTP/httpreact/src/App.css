@@ -53,3 +53,116 @@ form input {
   flex-direction: column;
   margin-bottom: 15px;
 }
+
+
+
+.price-table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+ 
+}
+
+
+
+.price-table th, .price-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.price-table th {
+  background-color: #4CAF50; /* Fundo verde para cabeçalho */
+  color: white;
+}
+
+.price-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Cinza claro para linhas pares */
+}
+
+.price-table tr:hover {
+  background-color: #f1f1f1; /* Cor de destaque ao passar o mouse */
+}
+
+.tabela{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+
+
+.styled-form {
+  max-width: 400px;
+  margin: 0 auto; /* Centraliza o formulário na página */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do formulário */
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilização dos rótulos (labels) */
+.styled-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Campos de entrada e área de texto */
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.styled-form input[type="text"]:focus,
+.styled-form input[type="email"]:focus,
+.styled-form textarea:focus {
+  border-color: #4CAF50; /* Cor de borda ao focar no campo */
+  outline: none;
+}
+
+/* Área de texto */
+.styled-form textarea {
+  min-height: 100px;
+  resize: vertical; /* Permite redimensionamento vertical */
+}
+
+/* Botão de envio */
+.styled-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.styled-form button[type="submit"]:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+
+
+

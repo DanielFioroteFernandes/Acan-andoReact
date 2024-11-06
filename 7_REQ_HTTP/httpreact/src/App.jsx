@@ -1,3 +1,9 @@
+//prime react
+import { Button } from "primereact/button";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+
+//bootstrap
+
 import { useState } from "react";
 
 // 4 - custom hook
@@ -68,7 +74,27 @@ function App() {
       {/* 6  - Loading */}
 
       {Loading && <p>Esta carregando os dados</p>}
-      <ul>
+      <div className="tabela">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            {items &&
+              items.map((product) => (
+                <tr>
+                  <td>{product.name}</td>
+                  <td>R$ {product.price}</td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+      </div>
+      {/* 
+     <ul>
         {items &&
           items.map((product) => (
             <li key={product.id}>
@@ -76,13 +102,14 @@ function App() {
             </li>
           ))}
       </ul>
-
+*/}
       {/* Formalario para envio de dados enciado dados para handleSubmit */}
       <div className="add-product">
-        <form onSubmit={handleSubmit}>
+        <form className="styled-form" onSubmit={handleSubmit}>
           <label>
             Nome:
             <input
+              required
               type="text"
               value={name}
               name="name"
@@ -93,6 +120,7 @@ function App() {
           <label>
             Preço:
             <input
+              required
               type="number"
               value={price}
               name="price"
@@ -100,8 +128,23 @@ function App() {
             />
           </label>
           {/* State de loading no POST */}
-          {Loading && <input type="submit" disabled value="Aguarde" />}
+          <div className="card flex justify-content-center">
+            {Loading && (
+              <Button
+                label="Cadastrar"
+                icon="pi pi-check"
+                type="submit"
+                disabled
+              />
+            )}
+            {!Loading && (
+              <Button label="Cadastrar" icon="pi pi-check" type="submit" />
+            )}
+          </div>
+          {/* 
+         {Loading && <input type="submit" disabled value="Aguarde" />}
           {!Loading && <input type="submit" value="Criar " />}
+          */}
         </form>
       </div>
     </div>

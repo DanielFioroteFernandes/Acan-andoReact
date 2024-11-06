@@ -6,54 +6,104 @@
       "price": 59.9
     },
     {
-      "id": "2",
-      "name": "Calça vermelha",
-      "price": 90
+      "id": "1123",
+      "name": "Rhuan",
+      "price": "1"
     },
     {
-      "id": "3",
-      "name": "Boné aba reta",
-      "price": 29.9
+      "id": "6c55",
+      "name": "guilherme ",
+      "price": "50"
     },
     {
-      "id": "3a0e",
-      "name": "teste4",
-      "price": "26"
+      "id": "b232",
+      "name": "erro",
+      "price": "260"
     },
     {
-      "id": "a9c2",
-      "name": "daniel",
-      "price": "352"
+      "id": "99ad",
+      "name": "HD",
+      "price": "25.00"
     },
     {
-      "id": "88ef",
-      "name": "daniel",
-      "price": "352"
+      "id": "f48e",
+      "name": "Placa de Video",
+      "price": "520.00"
     },
     {
-      "id": "cae0",
-      "name": "daniel",
-      "price": "352"
+      "id": "bc33",
+      "name": "teclado",
+      "price": "25.00"
     },
     {
-      "id": "8828",
-      "name": "daniel",
-      "price": "855"
+      "id": "90e6",
+      "name": "teclado",
+      "price": "25.00"
     },
     {
-      "id": "ffac",
-      "name": "daniel",
-      "price": "855"
+      "id": "de44",
+      "name": "teclado",
+      "price": "25.00"
     },
     {
-      "id": "3f68",
-      "name": "carro",
-      "price": "25"
+      "id": "8a60",
+      "name": "teclado",
+      "price": "25.00"
     },
     {
-      "id": "fe74",
-      "name": "carro",
-      "price": "25"
+      "id": "4990",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "6a3c",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "032f",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "a74f",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "0745",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "c47c",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "2057",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "ef97",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "7e36",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "dd60",
+      "name": "teclado",
+      "price": "25.00"
+    },
+    {
+      "id": "9111",
+      "name": "teclado",
+      "price": "25.00"
     }
   ]
 }
