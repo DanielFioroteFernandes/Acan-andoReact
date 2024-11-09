@@ -9,8 +9,6 @@ import { useState } from "react";
 // 4 - custom hook
 import { useFetch } from "./hooks/useFetch";
 
-import "./App.css";
-
 const url = "http://localhost:3000/products";
 
 function App() {
@@ -18,7 +16,7 @@ function App() {
 
   //4 custom hook
 
-  const { data: items, httpConfig, Loading } = useFetch(url);
+  const { data: items, httpConfig, Loading, error } = useFetch(url);
 
   // atrributos para envio de dados
   const [name, setName] = useState("");
@@ -68,14 +66,21 @@ function App() {
     setPrice("");
   };
 
+  //8 - desafio excluir
+
+  const handleRemove = (id) => {
+    httpConfig(id, "DELETE");
+  };
+
   return (
     <div className="App">
       <h2>Lista de produtos</h2>
       {/* 6  - Loading */}
 
       {Loading && <p>Esta carregando os dados</p>}
+      {error && <p>{error}</p>}
       <div className="tabela">
-        <table class="price-table">
+        <table className="price-table">
           <thead>
             <tr>
               <th>Nome</th>
@@ -85,24 +90,32 @@ function App() {
           <tbody>
             {items &&
               items.map((product) => (
-                <tr>
+                <tr key={product.id}>
                   <td>{product.name}</td>
                   <td>R$ {product.price}</td>
+                  <td>
+                    <button onClick={() => handleRemove(product.id)}>
+                      Excluir
+                    </button>
+                  </td>
                 </tr>
               ))}
           </tbody>
         </table>
       </div>
-      {/* 
-     <ul>
+
+      <ul>
         {items &&
           items.map((product) => (
             <li key={product.id}>
               {product.name} - R$: {product.price}
+              <button onClick={() => handleRemove(product.id)}>
+                Excluir 2
+              </button>
             </li>
           ))}
       </ul>
-*/}
+
       {/* Formalario para envio de dados enciado dados para handleSubmit */}
       <div className="add-product">
         <form className="styled-form" onSubmit={handleSubmit}>

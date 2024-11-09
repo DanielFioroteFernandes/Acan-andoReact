@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -73,16 +73,16 @@ form input {
 }
 
 .price-table th {
-  background-color: #4CAF50; /* Fundo verde para cabeçalho */
+  background-color: #4CAF50; 
   color: white;
 }
 
 .price-table tr:nth-child(even) {
-  background-color: #f9f9f9; /* Cinza claro para linhas pares */
+  background-color: #f9f9f9; 
 }
 
 .price-table tr:hover {
-  background-color: #f1f1f1; /* Cor de destaque ao passar o mouse */
+  background-color: #f1f1f1; 
 }
 
 .tabela{
@@ -100,15 +100,14 @@ form input {
 
 .styled-form {
   max-width: 400px;
-  margin: 0 auto; /* Centraliza o formulário na página */
+  margin: 0 auto; 
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do formulário */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
 }
 
-/* Estilização dos rótulos (labels) */
 .styled-form label {
   display: block;
   margin-top: 10px;
@@ -116,7 +115,6 @@ form input {
   color: #333;
 }
 
-/* Campos de entrada e área de texto */
 .styled-form input[type="text"],
 .styled-form input[type="email"],
 .styled-form textarea {
@@ -133,17 +131,16 @@ form input {
 .styled-form input[type="text"]:focus,
 .styled-form input[type="email"]:focus,
 .styled-form textarea:focus {
-  border-color: #4CAF50; /* Cor de borda ao focar no campo */
+  border-color: #4CAF50; 
   outline: none;
 }
 
-/* Área de texto */
+
 .styled-form textarea {
   min-height: 100px;
-  resize: vertical; /* Permite redimensionamento vertical */
+  resize: vertical;
 }
 
-/* Botão de envio */
 .styled-form button[type="submit"] {
   display: block;
   width: 100%;
@@ -160,9 +157,9 @@ form input {
 }
 
 .styled-form button[type="submit"]:hover {
-  background-color: #45a049; /* Cor do botão ao passar o mouse */
+  background-color: #45a049; 
 }
 
 
 
-
+ */

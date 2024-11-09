@@ -2,108 +2,19 @@
   "products": [
     {
       "id": "1",
-      "name": "Camisa",
-      "price": 59.9
+      "name": "Teste novo",
+      "price": "25"
     },
     {
-      "id": "1123",
-      "name": "Rhuan",
-      "price": "1"
+      "id": "5",
+      "name": "Teste novo imbutido",
+      "price": "25"
     },
     {
-      "id": "6c55",
-      "name": "guilherme ",
-      "price": "50"
-    },
-    {
-      "id": "b232",
-      "name": "erro",
-      "price": "260"
-    },
-    {
-      "id": "99ad",
-      "name": "HD",
-      "price": "25.00"
-    },
-    {
-      "id": "f48e",
-      "name": "Placa de Video",
-      "price": "520.00"
-    },
-    {
-      "id": "bc33",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "90e6",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "de44",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "8a60",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "4990",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "6a3c",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "032f",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "a74f",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "0745",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "c47c",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "2057",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "ef97",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "7e36",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "dd60",
-      "name": "teclado",
-      "price": "25.00"
-    },
-    {
-      "id": "9111",
-      "name": "teclado",
-      "price": "25.00"
+      "id": "5",
+      "name": "Test",
+      "price": "25"
     }
+   
   ]
 }
