@@ -1,12 +1,12 @@
-import { useAuthentication } from "../../hooks/useAuthentication";
 import styles from "./Register.module.css";
 
 import { useEffect, useState } from "react";
+import { useAuthentication } from "../../hooks/useAuthentication";
 
 const Register = () => {
   const [displayName, setDisplayName] = useState("");
   const [email, setEmail] = useState("");
-  const [passsword, setPassword] = useState("");
+  const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
@@ -20,10 +20,10 @@ const Register = () => {
     const user = {
       displayName,
       email,
-      passsword,
+      password,
     };
 
-    if (passsword !== confirmPassword) {
+    if (password !== confirmPassword) {
       setError("As senhas precisam ser iguais! ");
       return;
     }
@@ -74,7 +74,7 @@ const Register = () => {
             name="password"
             required
             placeholder="Insira sua senha"
-            value={passsword}
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
