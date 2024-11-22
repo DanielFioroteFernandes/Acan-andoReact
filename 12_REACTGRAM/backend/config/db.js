@@ -12,7 +12,7 @@ const conn = async () => {
     return dbConn;
   } catch (error) {
     console.log(error);
-    console.log("erro fdp");
+  
   }
 };
 
