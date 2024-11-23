@@ -12,7 +12,6 @@ const conn = async () => {
     return dbConn;
   } catch (error) {
     console.log(error);
-  
   }
 };
 
