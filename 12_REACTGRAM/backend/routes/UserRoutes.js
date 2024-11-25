@@ -7,6 +7,7 @@ const {
   login,
   getCurrentUser,
   update,
+  getUserById,
 } = require("../controllers/userController");
 
 //middleware
@@ -38,4 +39,5 @@ router.put(
   update
 );
 
+router.get("/:id", getUserById);
 module.exports = router;
