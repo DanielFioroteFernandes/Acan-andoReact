@@ -20,6 +20,7 @@ const generateToken = (id) => {
 const register = async (req, res) => {
   const { name, email, password } = req.body;
 
+  console.log(name, email, password);
   //checar se usuario ixiste
   const user = await User.findOne({ email });
 
@@ -69,9 +70,11 @@ const login = async (req, res) => {
   //checar o password
 
   if (!(await bcrypt.compare(password, user.password))) {
-    res.status(422).json({ errors: ["Senha incorreta"] });
+    res.status(422).json({ errors: ["Senha Inválida"] });
+    return;
   }
   // retornar ususario e token
+
   res.status(201).json({
     _id: user._id,
     profileImage: user.profileImage,
