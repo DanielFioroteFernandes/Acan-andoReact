@@ -8,14 +8,14 @@ const conn = async () => {
       `mongodb+srv://${dbUser}:${dbPassword}@cluster0.yw7jq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
     );
 
-    // // try {
-    // //   const dbConn = await mongoose.connect(
-    // //     "mongodb://admin:password@localhost:27017",
-    // //     {
-    // //       useNewUrlParser: true,
-    // //       useUnifiedTopology: true,
-    // //       authSource: "admin",
-    // //     }
+    // try {
+    //   const dbConn = await mongoose.connect(
+    //     "mongodb://admin:password@localhost:27017",
+    //     {
+    //       useNewUrlParser: true,
+    //       useUnifiedTopology: true,
+    //       authSource: "admin",
+    //     }
     //   );
 
     console.log("Conectou ao Banco");
